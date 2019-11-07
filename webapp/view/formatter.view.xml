@@ -1,0 +1,45 @@
+<mvc:View controllerName="Formatter_assignment.Formatter_assignment.controller.formatter" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="tb" items="{/bills}" noDataText="{i18n>noDataText}">	
+							<columns>
+								<Column id="col1" hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+									<Text text="{i18n>col1title}" tooltip="{i18n>tooltip1}"></Text>
+								</Column>
+									<Column id="col12" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>col2title}"  tooltip="{i18n>tooltip12}"></Text>
+								</Column>
+									<Column id="col3" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>col3title}"  tooltip="{i18n>tooltip3}"></Text>
+								</Column>
+									<Column id="col4" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>col4title}"  tooltip="{i18n>tooltip4}"></Text>
+								</Column>
+									<Column id="col5" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+									<Text text="{i18n>col5title}" tooltip="{i18n>tooltip5}"></Text>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle">
+									<cells>
+									
+										<Text text="{Name}" wrapping="true"></Text>
+										<Text text="{Location}" wrapping="true"></Text>
+										<Text text="{BillNo}" wrapping="true"></Text>
+										<Text text="{path : 'DueDate' , formatter : '.test.fnOnDateFormat'}"  wrapping="true"></Text>
+										<Text text="{path : 'Status' , formatter : '.test.fnStatusFormat'}"  wrapping="true"></Text>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

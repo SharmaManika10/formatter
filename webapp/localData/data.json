@@ -1,0 +1,47 @@
+{
+	"bills": [{
+			"Name": "Manika",
+			"Location": "Karnal",
+			"BillNo": "12",
+			"DueDate": "10012020",
+			"Status": "P"
+		},
+		{
+			"Name": "Sagar",
+			"Location": "Karnal",
+			"BillNo": "13",
+			"DueDate": "10012020",
+			"Status": "P"
+		},
+		{
+			"Name": "Lakshay",
+			"Location": "Delhi",
+			"BillNo": "14",
+			"DueDate": "10012020",
+			"Status": "D"
+		},
+		{
+			"Name": "Shweta",
+			"Location": "Noida",
+			"BillNo": "15",
+			"DueDate": "10012020",
+			"Status": "P"
+		},
+		{
+			"Name": "Himanshu",
+			"Location": "Dwarka",
+			"BillNo": "15",
+			"DueDate": "10012020",
+			"Status": "D"
+		},
+		{
+			"Name": "Rasika",
+			"Location": "Mumbai",
+			"BillNo": "15",
+			"DueDate": "10012020",
+			"Status": "P"
+		}
+
+	]
+
+}
